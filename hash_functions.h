@@ -58,8 +58,8 @@ typedef SHA512_Context SHA384_Context;
 
 #define SHA256_F1(x) (ROTR32(x,2) ^ ROTR32(x,13) ^ ROTR32(x,22))
 #define SHA256_F2(x) (ROTR32(x,6) ^ ROTR32(x,11) ^ ROTR32(x,25))
-#define SHA256_F3(x) (ROTR32(x,7) ^ ROTR32(x,18) ^ SHFR(x, 3)) //((x) >> 3))
-#define SHA256_F4(x) (ROTR32(x,17) ^ ROTR32(x,19) ^ SHFR(x, 10)) //((x) >> 10))
+#define SHA256_F3(x) (ROTR32(x,7) ^ ROTR32(x,18) ^ SHFR(x, 3)) 
+#define SHA256_F4(x) (ROTR32(x,17) ^ ROTR32(x,19) ^ SHFR(x, 10)) 
 
 #define SHA512_F1(x) (ROTR64(x, 28) ^ ROTR64(x, 34) ^ ROTR64(x, 39))
 #define SHA512_F2(x) (ROTR64(x, 14) ^ ROTR64(x, 18) ^ ROTR64(x, 41))
