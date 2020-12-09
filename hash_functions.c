@@ -63,10 +63,10 @@ const uint64 K512[80] = {
  */
 static void sha1_transform(SHA1_Context *ctx, uchar data[]) {
 
-    int i;  	             /* Loop counter                */
-    uint temp;               /* Temporary word value        */
-    uint W[80];         	 /* Word sequence               */
-    uint wv[5];			     /* Word buffers                */
+    int i;  	             	/* Loop counter */
+    uint temp;               	/* Temporary word value */
+    uint W[80];        		/* Word sequence */
+    uint wv[5];			/* Word buffers */
 
     /*
      *  Initialize the first 16 words in the array W
